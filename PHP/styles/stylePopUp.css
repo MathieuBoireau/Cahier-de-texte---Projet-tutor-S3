@@ -1,0 +1,42 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex-basis: 800px;
+}
+
+table {
+	padding-left: 3vh;
+	padding-right: 3vh;
+	margin-bottom: 10vh;
+	width: 100%;
+}
+
+aside {
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 0;
+}
+
+aside>input {
+	height: 6vh;
+	min-width: 20vh;
+}
+
+
+
+form {
+	margin: 10vh 3vh 0 3vh;
+}
+
+.bouton:hover {
+	background-color: rgba(255,255,255);
+	color: #ADBFCF;
+	text-decoration: none;
+	margin: 0 auto;
+	cursor: pointer;
+}
+

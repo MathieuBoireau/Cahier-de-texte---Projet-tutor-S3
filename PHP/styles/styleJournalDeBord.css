@@ -1,0 +1,242 @@
+header {
+	/* Espacement pour les flèches */
+	text-align: center;
+}
+
+.mois, .mois:link, .mois:visited, .mois:active {
+	color: #371951;
+	text-decoration: none;
+}
+.logout {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vh;
+	padding-right: 10vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+.item {
+	flex: 1 1 0;
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-basis: 800px;
+	justify-content: center;
+}
+
+article {
+	flex-basis: 80%;
+	margin: 0vh 2vw 0vh 2vw;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+nav {
+	position: fixed;
+	flex-basis: 20%;
+	order: -1;
+	padding-left: 3vh;
+	padding-right: 3vh;
+	text-align: center;
+	max-width: 35vh;
+	height: 55vh;
+}
+
+.centrer {
+	display: flex;
+	flex-direction: column;
+}
+.fecheDiminue {
+	width: 50%;
+}
+
+.flecheEtMois {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.middle {
+	position: relative!important;
+	transition: .5s ease;
+	opacity: 0;
+	transform: none!important;
+	-ms-transform: none!important;
+	text-align: center;
+	margin-bottom: 2vh;
+	top:0vh!important;
+	right:0vh!important;
+}
+
+.centrer:hover .home {
+	opacity: 0.3;
+}
+
+.centrer:hover .middle {
+	opacity: 1;
+}
+
+.texteHaut {
+	background-color: #3A4476;
+  	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+
+.partieGauche {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	padding-top: 1vh;
+	justify-content: space-between;
+	flex: 1 1 0;
+	text-align: center;
+}
+.centrer {
+	margin-bottom: 2vh;
+	text-align: center;
+}
+
+.boutonValModifGroupe {
+	height: 15vh;
+	width: 15vh;
+}
+.centrer:hover {
+	cursor: pointer;
+}
+
+p {
+	padding-bottom: 0vh;
+	font-size: 15px;
+	padding-top: 0vh;
+}
+
+.imgAffiche {
+	width: 4vh;
+	height :4vh;
+	cursor: pointer;
+}
+
+.seance {
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin-bottom: 4vh;
+	width: 130%;
+	border-collapse: collapse;
+}
+.sansCurseur{
+	cursor: default!important;
+}
+.sansCurseur:hover{
+	background-color: initial;
+	opacity: 0.8;
+}
+
+td {
+	text-align: center;
+	border-top-style: solid;
+	border-width: 1px;
+}
+.btnVerses:hover {
+	background-color: #371951;
+	color: white;
+}
+
+.semaine {
+	border-bottom: none;
+	width: 20%;
+	padding: 1vh;
+	border-width: 2px;
+	border-radius: 0;
+}
+
+header {
+	flex-basis: 100px;
+}
+
+.evenement-hidden {
+	display: none;
+}
+
+.panel-inactif, .panel-actif {
+	transition: 0.1s;
+	cursor: pointer;
+	height: 5vh;
+	/* border-bottom: none;
+	border-width: 2px;
+	border-radius: 0; */
+}
+
+.panel-inactif:hover, .panel-actif:hover {
+	background-color: #DDDDDD;
+}
+
+.panel-inactif:active, .panel-actif:active {
+	background-color: #CCCCCC;
+}
+
+.panel-inactif:after {
+	content: '◄';
+	color: #371951;
+	font-size: 2em;
+	border-top:1px solid;
+}
+
+.panel-actif:after {
+	content: '▼';
+}
+.titreJournalDeBord {
+	font-size: 4vh;
+}
+
+@media all and (max-width:1400px) {
+	main {
+		display: block;
+	}
+
+	nav {
+		position: relative;
+		max-height: 50vh;
+		margin-bottom: 2vh;
+	}
+	.logout {
+		font-size: 1.5vh;
+		padding: 0;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.boutonValModifGroupe {
+		left: 2vh;
+		height: 12vh;
+		width: 12vh;
+	}
+}
+@media all and (max-width:1400px) and (orientation:landscape) {
+	.logout {
+		font-size: 2.5vh;
+	}
+	.texteHaut {
+		display: none;
+	}
+	nav {
+		max-height: 70vh;
+		max-width: none;
+	}
+	.partieGauche {
+		width: initial;
+	}
+}
+
+

@@ -1,0 +1,102 @@
+th {
+	text-align: left;
+	padding-top: 20px;
+}
+
+p {
+	padding-left: 2%;
+}
+
+select {
+	/* Suffisant pour afficher 2 caractères */
+	width: 3rem;
+}
+
+main {
+	padding-top: 5vh;
+	padding-left: 5vh;
+	padding-right: 5vh;
+}
+
+.largeur {
+	width: 100%;
+}
+
+header {
+	text-align: center;
+}
+
+table td {
+	padding: 2vh;
+	/* Ne pas passer à la ligne. */
+	white-space: nowrap;
+	border-top-style: solid;
+	border-width: 1px;
+	border-color:#3A4476;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+table th {
+	padding-bottom: 2vh;
+	padding-left: 1vw;
+}
+
+#boutonAjoutUtilisateur {
+	margin-top: 2vh;
+	padding: 1vh;
+}
+
+#boutonAjoutUtilisateur a {
+	text-decoration: none;
+}
+
+.lien, .lien:link, .lien:visited, .lien:active {
+	color: #371951;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+
+.home {
+	width:10vh;
+	position: fixed;
+	right: 6vh;
+	top: 2vh;
+}
+img {
+	width:6vh;
+	height: 6vh;
+}
+
+@media all and (max-width:1100px) {
+	body {
+		font-size: 1.8vh;
+	}
+
+	main {
+		padding-left: 0vh;
+	}
+
+	table td {
+		padding: 0vh;
+		padding-top: 2vh;
+		padding-left: 0.5vw;
+		padding-right: 1vw;
+	}
+
+	input {
+		font-size: 1.8vh;
+		width: 7vh;
+	}
+
+	#boutonAjoutUtilisateur {
+		align-self: auto;
+		width: 30vh;
+	}
+	.home {
+		right: 0;
+		top: 5vh;
+	}
+}

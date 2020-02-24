@@ -1,0 +1,130 @@
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+option {
+	text-align: center;
+}
+
+.btnVersjdb:hover {
+	background-color: #371951;
+	color: white;
+}
+
+header, th, td {
+	text-align: center;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+h3 {
+	padding: 2vh;
+}
+.aEcarter {
+	margin-top: 5vh;
+}
+
+.full {
+	width: 100%;
+}
+.logout {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vh;
+	padding-right: 10vh;
+	margin-top: 2vh;
+}
+
+.item {
+	flex: 1 1 0;
+	text-align: center;
+}
+
+/* Position de l'élément pour retourner à la page précédente. */
+.menu {
+	position: absolute;
+	top: 11.1vh;
+	right: 0.5vw;
+}
+
+.sectionFiltre {
+	display: flex;
+	flex-direction: column;
+	padding-left: 3vw;
+}
+
+.soulign {
+	height: 5vh;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 1px;
+	padding-bottom: 1vh;
+}
+
+select {
+	width: 20vh;
+}
+
+.affichageSeance {
+	margin-left: 5%;
+	min-width: 100vh;
+}
+
+.evt-caption {
+	font-weight: bold;
+}
+@media all and (max-width:1600px) {
+	.item {
+		font-size: 2vh;
+	}
+}
+
+@media all and (max-width:1200px) {
+	h2 {
+		margin-top: 5vh;
+	}
+
+	.menu {
+		top: 13vh;
+	}
+
+	.sectionFiltre {
+		position: initial;
+		padding-left: 0vh;
+	}
+
+	main {
+		flex-direction: column;
+	}
+
+	.affichageSeance {
+		margin-left: 0vh;
+		min-width: 0vh;
+		margin-top: 5vh;
+	}
+	.item {
+		font-size: 1.5vh;
+	}
+	.logout {
+		height: 7vh;
+		padding: 0;
+	}
+}
+
+/* Téléphones avec écran 18:9 et plus */
+@media screen and (min-height: 740px) and (max-width: 400px) {
+	.menu {
+		top: 18vh;
+	}
+}
+
+@media all and (max-width:1400px) and (orientation:landscape) {
+	.item {
+		font-size: 2vh!important;
+	}
+}
